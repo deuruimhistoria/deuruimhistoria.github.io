@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deu Ruim Postador - TikTok</title>
+<style>body{font-family:Arial,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;color:#2A1C12;background:#FBF8EE}h1{color:#7A1F2A}#c{word-break:break-all;background:#fff;border:2px solid #2A1C12;padding:12px;font-family:monospace}button{margin-top:12px;padding:10px 18px;font-size:16px}</style></head>
+<body><h1>Deu Ruim Postador</h1>
+<p id="msg">Autorização do TikTok recebida. Copie o código abaixo e cole no chat do Claude.</p>
+<div id="c">(sem código)</div>
+<button onclick="navigator.clipboard.writeText(document.getElementById('c').textContent);this.textContent='Copiado!'">Copiar código</button>
+<p><a href="index.html">Voltar ao início</a></p>
+<script>var p=new URLSearchParams(location.search);var c=p.get('code');if(c){document.getElementById('c').textContent=c}else if(p.get('error')){document.getElementById('msg').textContent='O TikTok retornou um erro: '+p.get('error')+' '+(p.get('error_description')||'')}</script>
+</body></html>
